@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 .App .logo {
@@ -11,8 +12,8 @@
 }
 
 .puff-in-center {
-	-webkit-animation: puff-in-center 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-	        animation: puff-in-center 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+	-webkit-animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 @-webkit-keyframes puff-in-center {
@@ -45,5 +46,48 @@
     -webkit-filter: blur(0px);
             filter: blur(0px);
     opacity: 1;
+  }
+}
+
+.scroll-down {
+  height: 80px;
+  width: 110px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  background-color: #21252d;
+  text-align: center;
+  z-index: 6;
+}
+
+.scroll-down .arrow {
+  width: 3rem;
+  padding-top: 2rem;
+}
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+} 
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 }
