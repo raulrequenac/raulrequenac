@@ -1,0 +1,57 @@
+#Start {
+  width: 100%;
+}
+
+#Start .logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#Start .logo img {
+  width: 36vh;
+}
+
+#Start .logo .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 1vw;
+}
+
+#Start .logo .title h1,
+#Start .logo .title h2 {
+  color: white;
+  margin: 1vh 1.5vh;
+}
+
+#Start .logo .title h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#Start .logo .title h2 {
+  font-size: 2rem;
+}
+
+#Start .scroll-down {
+  height: 11.942vh;
+  width: 8.296vw;
+  min-width: 6rem;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  border-radius: 4px 4px 0 0;
+  background-color: #fba134;
+  text-align: center;
+  z-index: 6;
+}
+
+#Start .arrow {
+  padding-top: 3vh;
+  height: 9vh;
+  width: 7.5vw;
+  min-width: 50px;
+}
