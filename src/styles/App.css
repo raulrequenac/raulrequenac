@@ -1,9 +1,6 @@
 .App {
   background-color: #1b1b1b;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: -webkit-fill-available;
   background-image: url('/images/background.png');
 }

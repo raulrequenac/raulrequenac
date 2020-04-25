@@ -2,9 +2,13 @@ import React, { useState } from 'react'
 import '../styles/Start.css'
 
 const Start = () => {
-  let [isWrapped, setIsWrapped] = useState(window.screen.width < 700)
+  const [isWrapped, setIsWrapped] = useState(window.screen.width<700)
 
-  window.addEventListener('resize', () => setIsWrapped(window.screen.width < 700))
+  window.addEventListener('resize', () => setIsWrapped(window.screen.width<700))
+
+  const onClickScroll = () => {
+    document.getElementById('Profile').scrollIntoView({behavior: 'smooth'})
+  }
 
   return (
     <section id="Start">
@@ -15,9 +19,16 @@ const Start = () => {
           <h2>WEB DEVELOPER</h2>
         </div>
       </div>
-      <a href="#profile" className="scroll-down">
+      <div 
+        className="scroll-down" 
+        onClick={onClickScroll} 
+        style={{
+          width: `${isWrapped ? '-webkit-fill-available' : '8.296vw'}`,
+          right: `${isWrapped ? '' : '5%'}`
+        }}
+      >
         <img className="arrow slide-top" alt="" src="/images/arrow.svg"/>
-      </a>
+      </div>
     </section>
   )
 }

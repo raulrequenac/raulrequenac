@@ -1,0 +1,23 @@
+#Navbar {
+  border: 0px;
+  background-color: #fba134;
+  top: 100%;
+  right: 5%;
+  width: 8.296vw;
+  min-width: 7rem;
+  z-index: 999;
+  border-radius: 0 0 4px 4px;
+}
+
+#Navbar ul {
+  padding: 0;
+}
+
+#Navbar li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 2rem;
+}
