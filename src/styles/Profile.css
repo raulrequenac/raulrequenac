@@ -1,7 +1,21 @@
-#Profile {
-  height: 100vh;
+
+
+#Profile .content p {
+  text-align: left;
+  font-weight: 300;
 }
 
-#Profile h1 {
-  color: #1b1b1b;
+#Profile .content dl {
+  text-align: left;
+  font-weight: 300;
+}
+
+#Profile .content dd {
+  margin-bottom: 1rem;
+}
+
+#Profile .content .photo {
+  width: 100%;
+  border-radius: 50%;
+  margin-top: -3rem;
 }

@@ -2,11 +2,20 @@
   border: 0px;
   background-color: #fba134;
   top: 100%;
-  right: 5%;
   width: 8.296vw;
   min-width: 7rem;
   z-index: 999;
-  border-radius: 0 0 4px 4px;
+}
+
+#Navbar .navbar-header {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid;
+}
+
+#Navbar .navbar-header .menu {
+  width: 7vh;
+  padding: .5rem 1rem;
 }
 
 #Navbar ul {

@@ -5,6 +5,41 @@
   background-image: url('/images/background.png');
 }
 
+.title {
+  color: #fba134;
+  font-size: 3rem;
+  font-weight: 400;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  color: #fba134;
+  text-align: left;
+}
+
+.content {
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+
+.container {
+  height: 100vh;
+  padding: 3rem 21vw;
+}
+
+.col-3 {
+  width: 33.333%;
+  padding: .4rem 1vw;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .puff-in-center {
 	-webkit-animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;

@@ -16,7 +16,7 @@
   width: 36vh;
 }
 
-#Start .logo .title {
+#Start .logo .start-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,18 +24,18 @@
   padding-left: 1vw;
 }
 
-#Start .logo .title h1,
-#Start .logo .title h2 {
+#Start .logo .start-title h1,
+#Start .logo .start-title h2 {
   color: white;
   margin: 1vh 1.5vh;
 }
 
-#Start .logo .title h1 {
+#Start .logo .start-title h1 {
   font-size: 2.9rem;
   font-weight: 300;
 }
 
-#Start .logo .title h2 {
+#Start .logo .start-title h2 {
   font-size: 2rem;
 }
 
@@ -45,7 +45,6 @@
   display: block;
   position: absolute;
   bottom: 0px;
-  border-radius: 4px 4px 0 0;
   background-color: #fba134;
   text-align: center;
   z-index: 6;
