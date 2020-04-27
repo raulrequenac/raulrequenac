@@ -22,7 +22,11 @@ const Profile = () => {
 }
 
   return (
-    <section id="Profile" className="container" style={{padding: `${navbarHeight+(16*3)}px 7vw 0`}}>
+    <section 
+      id="Profile" 
+      className="container" 
+      style={{padding: `${isWrapped ? navbarHeight+(16*3)+'px 7vw 0' : ''}`}}
+      >
       <h1 className="title">Profile</h1>
       <div className="content d-flex" style={isWrapped ? {flexDirection: 'column'} : {}}>
         <div className={isWrapped ? '' : 'col-3'}>

@@ -6,7 +6,7 @@ export const ResponsiveContextProvider = ({ children }) => {
   const [isWrapped, setIsWrapped] = useState(window.screen.width<900)
   const [showMenu, setShowMenu] = useState(!isWrapped)
   const containerStyle = {
-    padding: isWrapped ? `3rem 7vw 0` : '',
+    padding: isWrapped ? `3rem 7vw` : '',
   }
 
   useEffect(() => {

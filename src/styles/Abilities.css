@@ -1,2 +1,59 @@
-#Abilities {
+#Abilities .skills-container {
+  justify-content: space-between;
+}
+
+#Abilities .skill {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+#Abilities .icon {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+#Abilities .name {
+  text-align: left;
+  font-size: 1rem;
+}
+
+#Abilities .repository {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#Abilities .repository p {
+  color: gray;
+  margin-bottom: .5rem;
+}
+
+#Abilities .repository .button {
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: #fba134;
+  width: 12rem;
+}
+
+#Abilities .repository .button .button-text {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+#Abilities .languages-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Abilities .languages-container .language {
+  display: flex;
+  align-items: center;
+}
+
+#Abilities .languages-container .language .level {
+  color: gray;
 }

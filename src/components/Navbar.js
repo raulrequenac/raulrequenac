@@ -32,11 +32,17 @@ const Navbar = () => {
       scroll > screenHeight : 
       scroll > screenHeight-40
     )
+
+    const startHeight = document.getElementById('Start').offsetHeight
+    const profileHeight = document.getElementById('Profile').offsetHeight
+    const experiencesHeight = document.getElementById('Experiences').offsetHeight
+    const abilitiesHeight = document.getElementById('Abilities').offsetHeight
+    const projectsHeight = document.getElementById('Projects').offsetHeight
     
-    if (scroll >= screenHeight*5) setCurrent('Contact')
-    else if (scroll >= screenHeight*4) setCurrent('Projects')
-    else if (scroll >= screenHeight*3) setCurrent('Abilities')
-    else if (scroll >= screenHeight*2) setCurrent('Experiences')
+    if (scroll >= startHeight+profileHeight+experiencesHeight+abilitiesHeight+projectsHeight) setCurrent('Contact')
+    else if (scroll >= startHeight+profileHeight+experiencesHeight+abilitiesHeight) setCurrent('Projects')
+    else if (scroll >= startHeight+profileHeight+experiencesHeight) setCurrent('Abilities')
+    else if (scroll >= startHeight+profileHeight) setCurrent('Experiences')
     else setCurrent('Profile')
   }
 
