@@ -14,7 +14,7 @@
 }
 
 #Navbar .navbar-header .menu {
-  width: 7vh;
+  width: 11vh;
   padding: .5rem 1rem;
 }
 
@@ -26,7 +26,10 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  padding: 2rem;
+}
+
+#Navbar li h1 {
   font-weight: 700;
   font-size: 1rem;
-  padding: 2rem;
 }

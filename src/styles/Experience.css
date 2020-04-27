@@ -1,0 +1,36 @@
+.Experience table {
+  width: 100%;
+}
+
+.Experience table td {
+  text-align: left;
+  vertical-align: baseline;
+  padding-bottom: 1rem;
+}
+
+.Experience table .first-c {
+  width: 35%;
+}
+
+.Experience table .second-c {
+}
+
+.Experience table .name {
+  color: #1b1b1b;
+  font-weight: 700;
+}
+
+.Experience table .data {
+  font-weight: 300;
+}
+
+.Experience table .location {
+  color: #fba134;
+  font-weight: 700;
+  display: flex;
+}
+
+.Experience table .location img {
+  width: 1rem;
+  padding-right: .5rem;
+}

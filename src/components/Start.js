@@ -4,12 +4,16 @@ import ResponsiveContext from '../contexts/ResponsiveContext'
 
 const Start = () => {
   const { isWrapped } = useContext(ResponsiveContext)
+  const wrappedStyle = isWrapped ? {
+    flexDirection: 'column',
+    alignItems: 'center'
+  } : {}
 
   const onClickScroll = () => document.getElementById('Profile').scrollIntoView({behavior: 'smooth'})
 
   return (
     <section id="Start">
-      <div className="logo puff-in-center" style={{flexDirection: `${isWrapped ? 'column' : ''}`}}>
+      <div className="logo puff-in-center" style={wrappedStyle}>
         <img alt="" src="/images/logo-t.png" style={{margin: `${isWrapped ? '-4rem 0 2rem' : '0'}`}}/>
         <div className="start-title">
           <h1>RAUL REQUENA</h1>

@@ -15,7 +15,6 @@
 }
 
 #Profile .content .photo {
-  width: 100%;
+  width: 21vw;
   border-radius: 50%;
-  margin-top: -3rem;
 }
