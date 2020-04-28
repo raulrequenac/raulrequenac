@@ -28,6 +28,8 @@ const Profile = () => {
       style={{padding: `${isWrapped ? navbarHeight+(16*3)+'px 7vw 0' : ''}`}}
       >
       <h1 className="title">Profile</h1>
+      <h3 className="quote">"Inside us there is something that has no name, that something is what we are."
+      <br/>- José Saramago</h3>
       <div className="content d-flex" style={isWrapped ? {flexDirection: 'column'} : {}}>
         <div className={isWrapped ? '' : 'col-3'}>
           <h1 className="subtitle">About me</h1>

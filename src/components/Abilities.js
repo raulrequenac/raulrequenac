@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import '../styles/Abilities.css'
 import skills from '../data/skills'
 import ResponsiveContext from '../contexts/ResponsiveContext'
+import languages from '../data/languages'
 
 const Abilities = () => {
   const { isWrapped, containerStyle } = useContext(ResponsiveContext)
@@ -11,37 +12,34 @@ const Abilities = () => {
     padding: '1rem 0'
   } : {}
 
+  const skillColumn = (column) => {
+    return (
+      <div>
+        {column.map((skill, i) => 
+          <div key={i} className="skill">
+            <img 
+              className="icon" 
+              alt="" src={skill.image} 
+              style={{height: `${isWrapped ? '' : '3rem'}`}}
+              />
+            <h1 className="name">{skill.name}</h1>
+          </div>
+        )}
+      </div>
+    )
+  }
+
   return (
     <section id="Abilities" className="container" style={containerStyle}>
       <h1 className="title">Abilities</h1>
+      <h3 className="quote">"The one really competitive skill is the skill of being able to learn."
+      <br/>- Seymour Papert</h3>
       <div className="content">
         <div className="skills">
           <h1 className="subtitle">Skills</h1>
           <div className="skills-container" style={{display: `${isWrapped ? '' : 'flex'}`}}>
-            <div className="first-col">
-              {skillsFirstHalf.map((skill, i) => 
-                <div key={i} className="skill">
-                  <img 
-                    className="icon" 
-                    alt="" src={skill.image} 
-                    style={{height: `${isWrapped ? '' : '3rem'}`}}
-                    />
-                  <h1 className="name">{skill.name}</h1>
-                </div>
-              )}
-            </div>
-            <div className="second-col">
-              {skillsSecondHalf.map((skill, i) => 
-                <div key={i} className="skill">
-                  <img 
-                    className="icon" 
-                    alt="" src={skill.image} 
-                    style={{height: `${isWrapped ? '' : '3rem'}`}}
-                    />
-                  <h1 className="name">{skill.name}</h1>
-                </div>
-              )}
-            </div>
+            {skillColumn(skillsFirstHalf)}
+            {skillColumn(skillsSecondHalf)}
           </div>
           <div className="repository">
             <p><i>This project is been developed with React</i></p>
@@ -54,27 +52,15 @@ const Abilities = () => {
         <div className="languages">
           <h1 className="subtitle">Languages</h1>
           <div className="languages-container" style={{flexDirection: `${isWrapped ? 'column' : ''}`}}>
-            <div className="language" style={languageStyle}>
-              <img className="icon" alt="" src="/images/flags/spain.svg" />
-              <div>
-                <h1 className="name">Spanish</h1>
-                <p className="level">Mother language</p>
+            {languages.map((lang, i) => (
+              <div className="language" style={languageStyle} key={i}>
+                <img className="icon" alt="" src={lang.flag} />
+                <div>
+                  <h1 className="name">{lang.name}</h1>
+                  <p className="level">{lang.level}</p>
+                </div>
               </div>
-            </div>
-            <div className="language" style={languageStyle}>
-              <img className="icon" alt="" src="/images/flags/uk.svg" />
-              <div>
-                <h1 className="name">English</h1>
-                <p className="level">Daily use</p>
-              </div>
-            </div>
-            <div className="language" style={languageStyle}>
-              <img className="icon" alt="" src="/images/flags/france.svg" />
-              <div>
-                <h1 className="name">French</h1>
-                <p className="level">Un petit peu</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

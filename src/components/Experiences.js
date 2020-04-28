@@ -10,6 +10,8 @@ const Experiences = () => {
   return (
     <section id="Experiences" className="container" style={containerStyle}>
       <h1 className="title">Experiences</h1>
+      <h3 className="quote">"There is only one good, knowledge, and one evil, ignorance."
+      <br/>- Socrates</h3>
       <div className="content">
         <div className="educations">
           {/* <h1 className="subtitle">Educations</h1> */}

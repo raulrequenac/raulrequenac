@@ -18,8 +18,14 @@ hr {
   color: #fba134;
   font-size: 3rem;
   font-weight: 400;
+}
+
+.quote {
+  color: gray;
+  font-weight: 400;
+  font-style: italic;
   border-bottom: 1px solid lightgray;
-  padding-bottom: 2rem;
+  padding: 1rem 0;
 }
 
 .subtitle {
