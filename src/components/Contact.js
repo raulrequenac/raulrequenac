@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react'
 import '../styles/Contact.css'
 import ResponsiveContext from '../contexts/ResponsiveContext'
+import raulrequenacServices from '../services/RaulrequenacServices'
 
 const Contact = () => {
+  const { sendEmail } = raulrequenacServices
   const { containerStyle } = useContext(ResponsiveContext)
   const [email, setEmail] = useState({email: '', subject: '', message: ''})
 
@@ -16,7 +18,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(email)
+    sendEmail(email)
+      .then(info => console.log(info))
+      .catch(error => console.log(error))
   }
 
   return (
