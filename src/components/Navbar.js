@@ -1,14 +1,16 @@
 import React, { useState, useContext } from 'react'
 import '../styles/Navbar.css'
 import ResponsiveContext from '../contexts/ResponsiveContext'
-
-const navbarItems = ['Profile', 'Experiences', 'Abilities', 'Projects', 'Contact']
+import sections from '../data/sections'
 
 const Navbar = () => {
-  const { isWrapped, showMenu, setShowMenu } = useContext(ResponsiveContext)
+  const { isWrapped, isEnglish, showMenu, setShowMenu } = useContext(ResponsiveContext)
+  const { englishSections, spanishSections } = sections
+  const navbarItems = isEnglish ? englishSections : spanishSections
   const [fixed, setFixed] = useState(document.documentElement.scrollTop > 600)
   const [current, setCurrent] = useState('Profile')
   const [scaleUp, setScaleUp] = useState('')
+
   
   const styleMarked = (id) => current===id ? { 
     backgroundColor: '#1b1b1b', 
@@ -65,14 +67,14 @@ const Navbar = () => {
         />
       </div>
       <ul style={{display: `${isWrapped ? showMenu ? '' : 'none' : ''}`}}>
-        {navbarItems.map((id, i) => <li 
-          style={styleMarked(id)} 
-          onClick={() => onClickScroll(id)}
-          onMouseEnter={() => onMouseInScaleUp(id)}
+        {englishSections.map(({title}, i) => <li 
+          style={styleMarked(title)} 
+          onClick={() => onClickScroll(title)}
+          onMouseEnter={() => onMouseInScaleUp(title)}
           onMouseLeave={onMouseLeaveScaleDown}
           key={i}
         >
-          <h1 className={scaleUp===id ? 'scale-up-center' : ''}>{id}</h1>
+          <h1 className={scaleUp===title ? 'scale-up-center' : ''}>{navbarItems[i].title}</h1>
         </li>
         )}
       </ul>

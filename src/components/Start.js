@@ -3,7 +3,7 @@ import '../styles/Start.css'
 import ResponsiveContext from '../contexts/ResponsiveContext'
 
 const Start = () => {
-  const { isWrapped } = useContext(ResponsiveContext)
+  const { isWrapped, isEnglish, setLanguage } = useContext(ResponsiveContext)
   const wrappedStyle = isWrapped ? {
     flexDirection: 'column',
     alignItems: 'center'
@@ -13,11 +13,15 @@ const Start = () => {
 
   return (
     <section id="Start">
+      <div className="language-change" style={isWrapped ? {right: '5%'} : {left: '5%'}}>
+        <img alt="" src="/images/languages/spain.png" onClick={() => setLanguage('spanish')}/>
+        <img alt="" src="/images/languages/uk.png" onClick={() => setLanguage('english')}/>
+      </div>
       <div className="logo puff-in-center" style={wrappedStyle}>
         <img alt="" src="/images/logo-t.png" style={{margin: `${isWrapped ? '-4rem 0 2rem' : '0'}`}}/>
         <div className="start-title">
           <h1>RAUL REQUENA</h1>
-          <h2>WEB DEVELOPER</h2>
+          <h2>{isEnglish ? 'WEB DEVELOPER' : 'DESARROLLADOR WEB'}</h2>
         </div>
       </div>
       <div 

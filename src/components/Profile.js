@@ -1,10 +1,15 @@
 import React, { useContext, useState, useEffect } from 'react'
 import '../styles/Profile.css'
 import ResponsiveContext from '../contexts/ResponsiveContext'
+import sections from '../data/sections'
 
 const Profile = () => {
-  const { isWrapped, showMenu } = useContext(ResponsiveContext)
+  const { isWrapped, isEnglish, showMenu } = useContext(ResponsiveContext)
+  const { englishSections, spanishSections } = sections
   const [navbarHeight, setNavbarHeight] = useState(0)
+
+  const profile = isEnglish ? englishSections[0] : spanishSections[0]
+  const quote = profile.quote.split('\n')
 
   useEffect(() => {
     setNavbarHeight(isWrapped ? document.getElementById('Navbar').offsetHeight : 0)
@@ -27,13 +32,12 @@ const Profile = () => {
       className="container" 
       style={{padding: `${isWrapped ? navbarHeight+(16*3)+'px 7vw 0' : ''}`}}
       >
-      <h1 className="title">Profile</h1>
-      <h3 className="quote">"Inside us there is something that has no name, that something is what we are."
-      <br/>- José Saramago</h3>
+      <h1 className="title">{profile.title}</h1>
+      <h3 className="quote">{quote.map((q, i) => <p key={i}>{q}</p>)}</h3>
       <div className="content d-flex" style={isWrapped ? {flexDirection: 'column'} : {}}>
         <div className={isWrapped ? '' : 'col-3'}>
-          <h1 className="subtitle">About me</h1>
-          <p>Passionate about the world of creativity, programming, design and technology. Merging these disciplines always generate differentiating and unique results. Web development allows me to find the balance between these passions.</p>
+          <h1 className="subtitle">{profile.subtitles[0].name}</h1>
+          <p>{profile.subtitles[0].description}</p>
         </div>
         <div className={isWrapped ? '' : 'col-3'}>
           <img 
@@ -44,14 +48,14 @@ const Profile = () => {
             />
         </div>
         <div className={isWrapped ? '' : 'col-3'}>
-          <h1 className="subtitle">Details</h1>
+          <h1 className="subtitle">{profile.subtitles[1].name}</h1>
           <dl>
-            <dt><b>Name:</b></dt>
-            <dd>Raúl Requena Cayuso</dd>
-            <dt><b>Age:</b></dt>
-            <dd> {currentAge()} years</dd>
-            <dt><b>Location:</b></dt>
-            <dd>Málaga, Andalusia, Spain</dd>
+            <dt><b>{profile.subtitles[1].details[0].name}:</b></dt>
+            <dd>{profile.subtitles[1].details[0].description}</dd>
+            <dt><b>{profile.subtitles[1].details[1].name}:</b></dt>
+            <dd> {currentAge()} {profile.subtitles[1].details[1].description}</dd>
+            <dt><b>{profile.subtitles[1].details[2].name}:</b></dt>
+            <dd>{profile.subtitles[1].details[2].description}</dd>
           </dl>
           <p><br/> </p>
           <p><br/></p>

@@ -1,11 +1,14 @@
 import React, { useContext } from 'react'
 import '../styles/Abilities.css'
 import skills from '../data/skills'
+import sections from '../data/sections'
 import ResponsiveContext from '../contexts/ResponsiveContext'
-import languages from '../data/languages'
 
 const Abilities = () => {
-  const { isWrapped, containerStyle } = useContext(ResponsiveContext)
+  const { isWrapped, isEnglish, containerStyle } = useContext(ResponsiveContext)
+  const { englishSections, spanishSections } = sections
+  const abilities = isEnglish ? englishSections[2] : spanishSections[2]
+  const quote = abilities.quote.split('\n')
   const skillsFirstHalf = skills.slice(0, Math.ceil(skills.length/2))
   const skillsSecondHalf = skills.slice(-Math.floor(skills.length/2))
   const languageStyle = isWrapped ? {
@@ -31,32 +34,31 @@ const Abilities = () => {
 
   return (
     <section id="Abilities" className="container" style={containerStyle}>
-      <h1 className="title">Abilities</h1>
-      <h3 className="quote">"The one really competitive skill is the skill of being able to learn."
-      <br/>- Seymour Papert</h3>
+      <h1 className="title">{abilities.title}</h1>
+      <h3 className="quote">{quote.map((q, i) => <p key={i}>{q}</p>)}</h3>
       <div className="content">
         <div className="skills">
-          <h1 className="subtitle">Skills</h1>
+          <h1 className="subtitle">{abilities.subtitles[0].title}</h1>
           <div className="skills-container" style={{display: `${isWrapped ? '' : 'flex'}`}}>
             {skillColumn(skillsFirstHalf)}
             {skillColumn(skillsSecondHalf)}
           </div>
           <div className="repository">
-            <p><i>This project is been developed with React</i></p>
+            <p><i>{abilities.subtitles[0].repository.description}</i></p>
             <div className="button">
               <a 
                 href="https://github.com/raulrequenac/raulrequenac" 
                 className="button-text" 
                 target="_blank" 
-                rel="noopener noreferrer">See project on Github</a>
+                rel="noopener noreferrer">{abilities.subtitles[0].repository.button}</a>
             </div>
           </div>
         </div>
         <hr/>
         <div className="languages">
-          <h1 className="subtitle">Languages</h1>
+          <h1 className="subtitle">{abilities.subtitles[1].name}</h1>
           <div className="languages-container" style={{flexDirection: `${isWrapped ? 'column' : ''}`}}>
-            {languages.map((lang, i) => (
+            {abilities.subtitles[1].languages.map((lang, i) => (
               <div className="language" style={languageStyle} key={i}>
                 <img className="icon" alt="" src={lang.flag} />
                 <div>

@@ -2,14 +2,18 @@ import React, { useContext, useState, useEffect } from 'react'
 import '../styles/Contact.css'
 import ResponsiveContext from '../contexts/ResponsiveContext'
 import raulrequenacServices from '../services/RaulrequenacServices'
+import sections from '../data/sections'
 
 const Contact = () => {
   const { sendEmail } = raulrequenacServices
-  const { isWrapped, containerStyle } = useContext(ResponsiveContext)
+  const { isWrapped, isEnglish, containerStyle } = useContext(ResponsiveContext)
   const [email, setEmail] = useState({email: '', subject: '', message: ''})
   const [success, setSuccess] = useState(false)
   const [state, setState] = useState({error: false, loading: false})
   const { loading, error } = state
+  const { englishSections, spanishSections } = sections
+  const contact = isEnglish ? englishSections[4] : spanishSections[4]
+  const quote = contact.quote.split('\n')
 
   const wrappedStyle = isWrapped ? {
     flexDirection: 'column'
@@ -31,7 +35,6 @@ const Contact = () => {
   }
 
   useEffect(() => {
-    console.log(loading)
     if (loading && !error) sendEmail(email)
       .then(
         () => {
@@ -56,29 +59,28 @@ const Contact = () => {
   return (
     <section id="Contact" className="container" style={containerStyle}>
       <div className="success" style={{display: `${success ? '' : 'none'}`}}>
-        Your mail has been sent succesfully!
+        {contact.success}
       </div>
       <div className="loading" style={{display: `${loading ? '' : 'none'}`}}>
         <img alt="" src="/images/loading.svg" className="rotate-center"/>
       </div>
-      <h1 className="title">Contact</h1>
-      <h3 className="quote">"Nothing is more expensive than a missed opportunity."
-      <br/>- H. Jackson Brown JR.</h3>
+      <h1 className="title">{contact.title}</h1>
+      <h3 className="quote">{quote.map((q, i) => <p key={i}>{q}</p>)}</h3>
       <form onSubmit={handleSubmit} className="email-container">
-        {isWrapped ? <></> : <input type="submit" value="Send e-mail"  className="send"/>}
+        {isWrapped ? <></> : <input type="submit" value={contact.sendEmail} className="send"/>}
         <label className="email-item email" style={wrappedStyle}>
-          <h1 className="label">Your e-mail:</h1>
+          <h1 className="label">{contact.email.description}:</h1>
           <input 
             className={`input ${errorClassName}`} 
             type="email" 
             name="email" 
             value={email.email}
             onChange={handleOnChange} 
-            placeholder="Enter your e-mail"
+            placeholder={contact.email.placeholder}
             />
         </label>
         <label className="email-item subject" style={wrappedStyle}>
-          <h1 className="label">Subject:</h1>
+          <h1 className="label">{contact.subject.description}:</h1>
           <input 
             className={`input ${errorClassName}`} 
             type="text" 
@@ -86,21 +88,24 @@ const Contact = () => {
             name="subject" 
             value={email.subject}
             onChange={handleOnChange} 
-            placeholder="Enter a subject"
+            placeholder={contact.subject.placeholder}
             />
         </label>
         <label className="email-item message" style={wrappedStyle}>
-          <h1 className="label">Message:</h1>
+          <h1 className="label">{contact.message.description}:</h1>
           <textarea 
             className={`input message ${errorClassName}`}
             name="message" 
             minLength="3"
             value={email.message} 
             onChange={handleOnChange}
-            placeholder="Write a message"
+            placeholder={contact.message.placeholder}
             />
         </label>
-        {isWrapped ? <input type="submit" value="Send e-mail"  className="send" style={{marginTop: '1rem'}}/> : <></>}
+        {isWrapped ? 
+          <input type="submit" value={contact.sendEmail}  className="send" style={{marginTop: '1rem'}}/> : 
+          <></>
+        }
         <div className="websites">
           <a 
             href="https://www.linkedin.com/in/raulrequenac/" 
@@ -129,12 +134,6 @@ const Contact = () => {
               <img alt="" src="/images/websites/mail.svg"/>
             </div>
             <h1>Gmail</h1>
-          </a>
-          <a href="https://www.malt.es/profile/raulrequenacayuso" className="website">
-            <div className="logo-container">
-              <img alt="" src="/images/websites/malt.png"/>
-            </div>
-            <h1>Malt</h1>
           </a>
         </div>
       </form>

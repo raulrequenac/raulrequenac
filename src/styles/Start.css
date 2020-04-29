@@ -6,6 +6,23 @@
   align-items: center;
 }
 
+#Start .language-change {
+  position: absolute;
+  top: -1px;
+  padding: .5rem;
+  width: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  background-color: #1b1b1b;
+  border-radius: 0 0 4px 4px;
+}
+
+#Start .language-change img {
+  width: 2.5rem;
+  border-radius: 5px;
+}
+
 #Start .logo {
   display: flex;
   justify-content: center;
