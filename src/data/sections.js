@@ -36,7 +36,7 @@ const englishSections = [{
   }]
 }, {
   title: 'Abilities',
-  quote: '',
+  quote: '"The only long-term competitive skill is the ability to learn."\n- Seymour Papert',
   subtitles: [{
     name: 'Skills',
     repository: {
@@ -102,7 +102,7 @@ const spanishSections = [{
   }]
 }, {
   title: 'Habilidades',
-  quote: '',
+  quote: '"La única habilidad competitiva a largo plazo es la habilidad para aprender."\n- Seymour Papert',
   subtitles: [{
     name: 'Conocimientos',
     repository: {

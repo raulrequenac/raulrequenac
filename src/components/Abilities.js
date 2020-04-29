@@ -38,7 +38,7 @@ const Abilities = () => {
       <h3 className="quote">{quote.map((q, i) => <p key={i}>{q}</p>)}</h3>
       <div className="content">
         <div className="skills">
-          <h1 className="subtitle">{abilities.subtitles[0].title}</h1>
+          <h1 className="subtitle">{abilities.subtitles[0].name}</h1>
           <div className="skills-container" style={{display: `${isWrapped ? '' : 'flex'}`}}>
             {skillColumn(skillsFirstHalf)}
             {skillColumn(skillsSecondHalf)}
