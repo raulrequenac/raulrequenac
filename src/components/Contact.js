@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <section id="Contact" className="container" style={containerStyle}>
-      <div className="success" style={{display: `${success ? '' : ''}`}}>
+      <div className="success" style={{display: `${success ? '' : 'none'}`}}>
         Your mail has been sent succesfully!
       </div>
       <div className="loading" style={{display: `${loading ? '' : 'none'}`}}>
