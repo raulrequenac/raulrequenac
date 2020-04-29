@@ -80,7 +80,7 @@
 }
 
 #Projects .project .link {
-  z-index: 1000;
+  z-index: 999;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
@@ -100,5 +100,5 @@
   border-radius: 0 0 0 4px;
   width: 2.5rem;
   padding: 0.5rem;
-  z-index: 99999;
+  z-index: 9999;
 }

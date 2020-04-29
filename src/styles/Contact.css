@@ -102,7 +102,7 @@
   align-items: center;
   height: 5rem;
   background-color: rgb(88, 214, 88);
-  z-index: 9999999;
+  z-index: 999999;
   opacity: 0.9;
   color: white;
   font-size: 2rem;
@@ -117,7 +117,7 @@
   left: 0;
   background-color: #1b1b1b;
   opacity: 0.8;
-  z-index: 9999999;
+  z-index: 999999;
   display: flex;
   justify-content: center;
   align-items: center;
