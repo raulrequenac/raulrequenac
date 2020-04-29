@@ -110,7 +110,8 @@ const Contact = () => {
             >
             <div className="logo-container">
               <img alt="" src="/images/websites/linkedin.svg"/>
-            </div>            <h1>LinkedIn</h1>
+            </div>            
+            <h1>LinkedIn</h1>
           </a>
           <a 
             href="https://github.com/raulrequenac" 
@@ -120,13 +121,20 @@ const Contact = () => {
             >
             <div className="logo-container">
               <img alt="" src="/images/websites/github.svg"/>
-            </div>            <h1>Github</h1>
+            </div>            
+            <h1>Github</h1>
           </a>
           <a href="mailto:raulrequec@gmail.com" className="website">
             <div className="logo-container">
               <img alt="" src="/images/websites/mail.svg"/>
             </div>
             <h1>Gmail</h1>
+          </a>
+          <a href="https://www.malt.es/profile/raulrequenacayuso" className="website">
+            <div className="logo-container">
+              <img alt="" src="/images/websites/malt.png"/>
+            </div>
+            <h1>Malt</h1>
           </a>
         </div>
       </form>

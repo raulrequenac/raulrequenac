@@ -24,7 +24,7 @@ hr {
   color: gray;
   font-weight: 400;
   font-style: italic;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid darkgray;
   padding: 1rem 0;
 }
 

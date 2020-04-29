@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <section id="Projects" className="container" style={containerStyle}>
       <h1 className="title">Projects</h1>
-      <h3 className="quote">“I am a great believer in luck, and I find the harder I work, the more I have of it.”
+      <h3 className="quote">“I am a great believer in luck and I find the harder I work, the more I have of it.”
       <br/>- Stephen Leacock</h3>
       <div className="projects-container">
         {projects.map((project, i) => (
