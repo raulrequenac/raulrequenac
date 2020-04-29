@@ -44,7 +44,11 @@ const Abilities = () => {
           <div className="repository">
             <p><i>This project is been developed with React</i></p>
             <div className="button">
-              <a href="https://github.com/raulrequenac/raulrequenac" className="button-text">See project on Github</a>
+              <a 
+                href="https://github.com/raulrequenac/raulrequenac" 
+                className="button-text" 
+                target="_blank" 
+                rel="noopener noreferrer">See project on Github</a>
             </div>
           </div>
         </div>

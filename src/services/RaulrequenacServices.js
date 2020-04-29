@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-const http = axios.create({
-    baseURL: "http://raulrequenac-api.herokuapp.com",
+const https = axios.create({
+    baseURL: "https://raulrequenac-api.herokuapp.com",
     withCredentials: true
 })
 
-const sendEmail = (email) => http.post('/', email)
+const sendEmail = (email) => https.post('/', email)
 
-export default {sendEmail}
+export default { sendEmail }
