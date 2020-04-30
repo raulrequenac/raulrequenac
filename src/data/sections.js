@@ -8,7 +8,7 @@ const { englishProjects, spanishProjects } = projects
 
 const englishSections = [{
   title: 'Profile',
-  quote: '"Inside us there is something that has no name, that something is what we are."\n- José Saramago',
+  quote: '"Inside us there is something that has no name, that something is what we are".\n- José Saramago',
   subtitles: [{
       name: 'About me',
       description: 'Passionate about the world of creativity, programming, design and technology. Merging these disciplines always generate differentiating and unique results. Web development allows me to find the balance between these passions.'
@@ -27,7 +27,7 @@ const englishSections = [{
   }]
 }, {
   title: 'Experiences',
-  quote: '"There is only one good, knowledge, and one evil, ignorance."\n- Socrates',
+  quote: '"There is only one good, knowledge, and one evil, ignorance".\n- Socrates',
   subtitles: [{
     name: 'Educations',
     educations: englishEducations
@@ -36,7 +36,7 @@ const englishSections = [{
   }]
 }, {
   title: 'Abilities',
-  quote: '"The only long-term competitive skill is the ability to learn."\n- Seymour Papert',
+  quote: '"The only long-term competitive skill is the ability to learn".\n- Seymour Papert',
   subtitles: [{
     name: 'Skills',
     repository: {
@@ -53,7 +53,7 @@ const englishSections = [{
   projects: englishProjects
 }, {
   title: 'Contact',
-  quote: '"Nothing is more expensive than a missed opportunity."\n- H. Jackson Brown JR.',
+  quote: '"Nothing is more expensive than a missed opportunity".\n- H. Jackson Brown JR.',
   success: 'Your mail has been sent succesfully!',
   email: {
     description: 'Your e-mail',
@@ -72,7 +72,7 @@ const englishSections = [{
 
 const spanishSections = [{
   title: 'Perfil',
-  quote: '"Dentro de nosotros existe algo que no tiene nombre y eso es lo que realmente somos."\n- José Saramago',
+  quote: '"Dentro de nosotros existe algo que no tiene nombre y eso es lo que realmente somos".\n- José Saramago',
   subtitles: [
     {
       name: 'Sobre mí',
@@ -93,7 +93,7 @@ const spanishSections = [{
   ]
 }, {
   title: 'Experiencias',
-  quote: '"Solo hay un bien, el conocimiento, y un mal, la ignorancia."\n- Sócrates',
+  quote: '"Solo hay un bien, el conocimiento, y un mal, la ignorancia".\n- Sócrates',
   subtitles: [{
     name: 'Formación',
     educations: spanishEducations
@@ -102,7 +102,7 @@ const spanishSections = [{
   }]
 }, {
   title: 'Habilidades',
-  quote: '"La única habilidad competitiva a largo plazo es la habilidad para aprender."\n- Seymour Papert',
+  quote: '"La única habilidad competitiva a largo plazo es la habilidad para aprender".\n- Seymour Papert',
   subtitles: [{
     name: 'Conocimientos',
     repository: {
@@ -119,7 +119,7 @@ const spanishSections = [{
   projects: spanishProjects
 }, {
   title: 'Contacto',
-  quote: '"No hay nada más caro que una oportunidad perdida."\n- H. Jackson Brown JR.',
+  quote: '"No hay nada más caro que una oportunidad perdida".\n- H. Jackson Brown JR.',
   success: '¡Su correo se ha enviado satisfactoriamente!',
   email: {
     description: 'Su correo',
