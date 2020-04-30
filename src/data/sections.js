@@ -49,7 +49,7 @@ const englishSections = [{
   }]
 }, {
   title: 'Projects',
-  quote: '“I am a great believer in luck and I find the harder I work, the more I have of it.”\n- Stephen Leacock',
+  quote: '"I am a great believer in luck and I find the harder I work, the more I have of it".\n- Stephen Leacock',
   projects: englishProjects
 }, {
   title: 'Contact',
@@ -115,12 +115,12 @@ const spanishSections = [{
   }]
 }, {
   title: 'Proyectos',
-  quote: '“Soy un gran creyente en la suerte y he descubierto que cuanto más duro trabajo, más suerte tengo.”\n- Stephen Leacock',
+  quote: '"Soy un gran creyente en la suerte y he descubierto que cuanto más duro trabajo, más suerte tengo".\n- Stephen Leacock',
   projects: spanishProjects
 }, {
   title: 'Contacto',
   quote: '"No hay nada más caro que una oportunidad perdida".\n- H. Jackson Brown JR.',
-  success: '¡Su correo se ha enviado satisfactoriamente!',
+  success: '¡Su correo se ha enviado con éxito!',
   email: {
     description: 'Su correo',
     placeholder: 'Introduzca su correo'
