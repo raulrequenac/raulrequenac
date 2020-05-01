@@ -6,7 +6,7 @@ const englishEducations = [{
   location: 'Madrid, Spain'
 }, {
   name: 'University of Málaga',
-  course: 'Engineering Informatics',
+  course: 'Informatics Engineering',
   date: '09/2015 - Current',
   description: 'Bachelor\'s degree focused on the application of advanced computing, information and communication technologies to engineering.',
   location: 'Málaga, Andalusia, Spain'

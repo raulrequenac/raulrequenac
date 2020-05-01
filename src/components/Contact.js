@@ -38,7 +38,6 @@ const Contact = () => {
     if (loading && !error) sendEmail(email)
       .then(
         () => {
-          console.log('hola')
           setSuccess(true)
           setState({error: false, loading: false})
         },
