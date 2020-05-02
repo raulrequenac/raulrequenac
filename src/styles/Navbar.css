@@ -14,8 +14,8 @@
 }
 
 #Navbar .navbar-header .menu {
-  width: 11vh;
-  height: auto;
+  width: 11vh; 
+  height: 7vh;
   padding: .5rem 1rem;
 }
 
