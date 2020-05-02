@@ -20,6 +20,7 @@
 
 #Start .language-change img {
   width: 2.5rem;
+  height: auto;
   border-radius: 5px;
 }
 
