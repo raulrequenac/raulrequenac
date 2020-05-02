@@ -9,13 +9,13 @@
 
 #Navbar .navbar-header {
   display: flex;
+  align-items: flex-start;
   justify-content: flex-end;
   border-top: 1px solid;
 }
 
 #Navbar .navbar-header .menu {
   width: 11vh; 
-  height: 7vh;
   padding: .5rem 1rem;
 }
 

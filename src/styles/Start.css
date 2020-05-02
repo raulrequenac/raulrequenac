@@ -12,6 +12,7 @@
   padding: .5rem;
   width: 6.5rem;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   border: 1px solid white;
   background-color: #1b1b1b;
@@ -20,7 +21,6 @@
 
 #Start .language-change img {
   width: 2.5rem;
-  height: 2rem;
   border-radius: 5px;
 }
 
