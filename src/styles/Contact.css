@@ -56,6 +56,11 @@
   width: 100%;
   align-self: center;
   margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+#Contact .email-container .send:hover {
+  background-color: #e08a23;
 }
 
 #Contact .websites {

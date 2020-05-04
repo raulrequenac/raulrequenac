@@ -33,4 +33,5 @@
 #Navbar li h1 {
   font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
 }
