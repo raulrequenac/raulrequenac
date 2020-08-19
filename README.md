@@ -1,6 +1,6 @@
 ### Hi there 👋, My name is Raúl
 #### I am a Full-Stack Developer from Spain
-<img src='https://media-exp1.licdn.com/dms/image/C4D16AQFYmcuP--AKcQ/profile-displaybackgroundimage-shrink_200_800/0?e=1603324800&v=beta&t=h3jTDsh_0ibKhSdotVBeFJnJGnpecZzsLoBYQuR4VHQ' alt='github' width='90%'>
+<img src='https://media-exp1.licdn.com/dms/image/C4D16AQFYmcuP--AKcQ/profile-displaybackgroundimage-shrink_200_800/0?e=1603324800&v=beta&t=h3jTDsh_0ibKhSdotVBeFJnJGnpecZzsLoBYQuR4VHQ' alt='github' width='100%'>
 
 Passionate about the world of creativity, programming, design and technology. Merging these disciplines always generate differentiating and unique results. Web development allows me to find the balance between these passions.
 
