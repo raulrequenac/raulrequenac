@@ -1,17 +1,66 @@
-### Hi there 👋, My name is Raúl
-#### I am a Full-Stack Developer from Spain
-<img src='https://media-exp1.licdn.com/dms/image/C4D16AQFYmcuP--AKcQ/profile-displaybackgroundimage-shrink_200_800/0?e=1603324800&v=beta&t=h3jTDsh_0ibKhSdotVBeFJnJGnpecZzsLoBYQuR4VHQ' alt='github' width='100%'>
+# Hi there 👋, I'm Raúl
 
-Passionate about the world of creativity, programming, design and technology. Merging these disciplines always generate differentiating and unique results. Web development allows me to find the balance between these passions.
+#### Backend Software Engineer | Java & Distributed Systems | Spain 🇪🇸
 
-<p align="left"><img src="https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg" alt="angularjs" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg" alt="bootstrap" width="40" height="40"/> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/java/java-original-wordmark.svg" alt="java" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> <img src="https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg" alt="materialize" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg" alt="photoshop" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> <img src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/></p>
+---
 
-- 🔭 I’m currently working on [Poddo](https://github.com/raulrequenac/Poddo-web)
-- 💬 Ask me about any of the skills mentioned below! 
-- 📫 How to reach me: raulrequec@gmail.com 
+I’m a software engineer focused on building scalable backend systems and clean, maintainable APIs.  
+I enjoy working on distributed architectures, improving system performance, and solving complex engineering problems.
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=raulrequenac&layout=compact&hide=html" alt="raulrequenac" /></p>
+Currently, I’m working mainly with **Java (Spring Boot)**, designing APIs and backend services with a strong focus on scalability, performance, and clean architecture.
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=raulrequenac&show_icons=true" alt="raulrequenac" /></p>
+I’m also building my own project: a personal finance app that combines bank account tracking and shared expense management.
 
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/https://github.com/raulrequenac)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/https://www.linkedin.com/in/raulrequenac//)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](http://raulrequenac.herokuapp.com/)  
+---
+
+### 🛠️ Tech Stack & Expertise
+
+**Backend & Core Engineering**
+- Java (Spring Boot)
+- RESTful API design
+- Microservices architecture
+- Distributed systems fundamentals
+
+**Data & Messaging**
+- MySQL, PostgreSQL
+- Event-driven systems (Kafka - applied in real projects)
+
+**Engineering Practices**
+- Clean Architecture & SOLID principles
+- API design (Zalando REST guidelines)
+- System design & scalability
+
+**Dev & Infrastructure**
+- Git, Docker
+- CI/CD pipelines (Azure DevOps)
+- Linux environments
+
+**Frontend (secondary)**
+- React
+- React Native (side projects)
+
+---
+
+### 🚀 Highlights
+
+- Designed and implemented APIs that **decoupled systems and significantly improved performance**
+- Experience working with **microservices and distributed systems**
+- Comfortable taking ownership of features from design to production
+- Strong focus on **clean code, scalability, and maintainability**
+
+---
+
+### 🌱 Current Focus
+
+- Improving system design and architecture skills  
+- Deepening knowledge of Kafka and event-driven systems  
+- Building my personal finance app ("bubun")  
+- Exploring better ways to design and scale APIs  
+
+---
+
+### 📫 Contact
+
+- Email: raulrequec@gmail.com  
+- LinkedIn: [linkedin.com/in/raulrequenac](https://www.linkedin.com/in/raulrequenac)  
+- GitHub: [github.com/raulrequenac](https://github.com/raulrequenac)
