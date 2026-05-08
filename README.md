@@ -63,4 +63,3 @@ I’m also building my own project: a personal finance app that combines bank ac
 
 - Email: raulrequec@gmail.com  
 - LinkedIn: [linkedin.com/in/raulrequenac](https://www.linkedin.com/in/raulrequenac)  
-- GitHub: [github.com/raulrequenac](https://github.com/raulrequenac)
